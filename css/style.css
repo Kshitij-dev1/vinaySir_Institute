@@ -92,7 +92,7 @@ img{
     color: var(--color-white);
 }
 
-/* ========== Nav bar ====================== */
+/* =========================== Navbar ============================== */
 
 nav{
     background-color: transparent;
@@ -126,4 +126,99 @@ nav button{
 }
 .nav__menu a:hover{
     color: var(--color-bg2);
+}
+
+
+/* =========================== Header ============================== */
+
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header_left p{
+    margin: 1rem 0 2.4rem;
+}
+
+
+/* ================================== Categories ============================ */
+
+.categories{
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* gap: 4rem; */
+}
+
+.categorise_left{
+    margin-right: 4rem;
+}
+
+.categorise_left p{
+    margin: 1rem 0 3rem;
+}
+
+.categorise_right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.category:hover{
+    box-shadow: 0 3rem 3rem rgb(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.category:nth-child(2) .category_icon{
+    background: var(--color-danger);
+}
+.category:nth-child(3) .category_icon{
+    background: var(--color-sucess);
+}
+.category:nth-child(4) .category_icon{
+    background: var(--color-warning);
+}
+.category:nth-child(5) .category_icon{
+    background: var(--color-sucess);
+}
+
+
+.category_icon{
+    background: var(--color-primary);
+    padding: 11.2px;
+    border-radius: 14.4px;
+}
+
+.category h5{
+    margin: 2rem 0 1rem;
+}
+
+.category p{
+    font-size: 0.85rem;
 }
